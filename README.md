@@ -7,14 +7,8 @@ It allows users to set a custom date and time (with AM/PM), start, pause, and re
 
 ## 🌐 Live Demo
 
-👉 [**View Live Demo**](https://your-demo-link-here.com)  
-*(Replace with your deployed GitHub Pages / Netlify / Vercel link once hosted)*
-
----
-
-## 🖼️ Preview
-
-![Countdown Timer Screenshot](https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1740&q=80)
+👉 [**View Live Demo**]( https://kalyani-377.github.io/countdown-timer-app/)  
+ 
 
 ---
 
@@ -37,8 +31,4 @@ It allows users to set a custom date and time (with AM/PM), start, pause, and re
 
 ---
 
-## 🚀 Getting Started
-
-### 1️⃣ Clone this repository
-```bash
-git clone https://github.com/your-username/countdown-timer.git
+ 
