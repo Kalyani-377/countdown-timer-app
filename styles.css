@@ -1,0 +1,151 @@
+ /* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1740&q=80')
+    center/cover no-repeat fixed;
+}
+
+/* Blur overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+  z-index: 0;
+}
+
+/* Main Container */
+.container {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Countdown Text */
+#countdown {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+/* ===== GLASSY BUTTONS ===== */
+.controls button,
+.input-panel button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.7rem 1.4rem;
+  margin: 0.4rem;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1); /* glass effect */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.controls button:hover,
+.input-panel button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  transform: translateY(-2px);
+}
+
+/* Active / Clicked */
+.controls button:active,
+.input-panel button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+/* Optional: Slight color hint for each button */
+#play { border-color: rgba(0,255,149,0.4); }
+#pause { border-color: rgba(255,136,0,0.4); }
+#reset { border-color: rgba(255,59,59,0.4); }
+#set-date { border-color: rgba(0,191,255,0.4); }
+
+/* Input Panel */
+.input-panel {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Date Input */
+.input-panel input {
+  background-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Placeholder text color */
+.input-panel input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets & iPads */
+@media (max-width: 1024px) {
+  #countdown {
+    font-size: 2.5rem;
+  }
+  .controls button,
+  .input-panel button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.1rem;
+  }
+  .input-panel input {
+    width: 220px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  #countdown {
+    font-size: 2rem;
+  }
+  .controls button,
+  .input-panel button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  .input-panel {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-panel input {
+    width: 200px;
+  }
+}

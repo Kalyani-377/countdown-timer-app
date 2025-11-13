@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Countdown Timer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+  <div class="overlay"></div>
+  <div class="container">
+    <p id="countdown">0d 0h 0m 0s</p> <!--countdown in days, hours, minutes and seconds-->
+    <div class="controls">
+      <button id="play">Start</button> <!--start button to start countdown-->
+      <button id="pause">Pause</button><!--button to pause the countdown -->
+      <button id="reset">Reset</button><!--button to reset the countodown-->
+    </div>
+    <div class="input-panel"> <!--block to input the date and time -->
+      <input type="datetime-local" id="custom-datetime"/>
+      <button id="set-date">Set</button> <!--to Set the given date and start the countdown-->
+    </div>
+  </div>
+  
+<script src="scripts.js"></script>    
+</body>
+
+</html>
